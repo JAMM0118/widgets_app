@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 import 'package:widgets_app/presetation/screens/buttons/buttons_screen.dart';
 
@@ -62,7 +63,10 @@ class _CustomListTile extends StatelessWidget {
           ),
         );*/
 
-        Navigator.pushNamed(context,menuItem.link); //forma 2 de navegar
+        //Navigator.pushNamed(context,menuItem.link); //forma 2 de navegar entre pantallas
+
+        
+        context.push(menuItem.link); //forma 3 de navegar entre pantallas con go_router
       },
     );
   }
