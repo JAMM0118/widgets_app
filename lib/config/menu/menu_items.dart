@@ -35,7 +35,7 @@ const appMenuItems = <MenuItem>[
     title: "Naise", 
     subTitle: "it's work", 
     link: "/nice", 
-    icon: Icons.pallet
+    icon: Icons.access_alarm_sharp
     ),
   
 ];

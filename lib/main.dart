@@ -14,14 +14,15 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 8).getTheme(),
-      home: const HomeScreen() 
+      home: const HomeScreen(),
+       
       
       /*Scaffold(
         body: Center(
           child: FilledButton(onPressed: (){}, child: Text("Hola mundo")), 
           // se da el color del tema de la app en este caso al button
         ),
-      )*/,
+      )*/
     );
   }
 }
