@@ -28,6 +28,11 @@ final appRouter = GoRouter(
     GoRoute(
       path: "/nice",
       builder: (context, state) => const NiceScreen(),
+    ),
+     
+    GoRoute(
+      path: "/progress",
+      builder: (context, state) => const ProgressScreen(),
     )
   ], 
 );
