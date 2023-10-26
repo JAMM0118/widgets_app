@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
-import 'package:widgets_app/presetation/screens/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -65,8 +64,16 @@ class _CustomListTile extends StatelessWidget {
 
         //Navigator.pushNamed(context,menuItem.link); //forma 2 de navegar entre pantallas
 
-        
-        context.push(menuItem.link); //forma 3 de navegar entre pantallas con go_router
+      //tambien se puede hacer con nombre de rutas
+      //context.pushnamed(CardsScreen.routeName); 
+      //forma 3 de navegar entre pantallas con go_router (se debe agregar la ruta en app_router.dart
+    // o tambien se puede hacer con creando un static const String routeName = cards ; en la pantalla a la que se quiere ir
+    //en este caso en cards_screen.dart se deberia crear esa variable
+    
+        //GoRouter.of(context).go(menuItem.link); //forma 4 de navegar entre pantallas con go_router
+
+
+        context.push(menuItem.link); //forma 5 de navegar entre pantallas con go_router
       },
     );
   }
