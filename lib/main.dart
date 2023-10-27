@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       title: "Flutter Widgets App",
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 8).getTheme(),
+      theme: AppTheme(selectedColor: 7).getTheme(),
     
        
       /*Scaffold(
