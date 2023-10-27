@@ -13,9 +13,9 @@ class SlideInfo {
 }
 
 final slides = <SlideInfo>[
-  SlideInfo(title: "Busca la comida", description: "Nostrud cupidatat laborum pariatur incididunt dolore sit tempor elit enim. Officia adipisicing ipsum incididunt commodo nisi aute laborum irure id cillum cillum proident nisi proident. Lorem nostrud ad ea qui duis id Lorem velit quis labore sit.", imageUrl: "assets/Images/1.png"),
-  SlideInfo(title: "Entrega rapida", description: "Ad elit nisi pariatur non nostrud. Irure elit est voluptate ea culpa. Consequat commodo reprehenderit enim elit.", imageUrl: "assets/Images/2.png"),
-  SlideInfo(title: "Disfruta la comida", description: "Duis tempor aliqua eu esse est adipisicing do dolor pariatur esse pariatur reprehenderit. Proident Lorem nostrud consequat minim voluptate incididunt occaecat velit culpa mollit. Exercitation aliquip Lorem dolor eiusmod sit quis sunt ipsum amet est. Irure dolore adipisicing id consequat nulla. Eu ad voluptate minim cillum dolore fugiat eu sit pariatur ea ad veniam laborum in.", imageUrl: "assets/Images/3.png"),
+  SlideInfo(title: "Busca la comida", description: "Nostrud cupidatat laborum pariatur incididunt dolore sit tempor elit enim. Officia adipisicing ipsum incididunt commodo nisi aute laborum irure id cillum cillum proident nisi proident. Lorem nostrud ad ea qui duis id Lorem velit quis labore sit.", imageUrl: "assets/images/1.png"),
+  SlideInfo(title: "Entrega rapida", description: "Ad elit nisi pariatur non nostrud. Irure elit est voluptate ea culpa. Consequat commodo reprehenderit enim elit.", imageUrl: "assets/images/2.png"),
+  SlideInfo(title: "Disfruta la comida", description: "Duis tempor aliqua eu esse est adipisicing do dolor pariatur esse pariatur reprehenderit. Proident Lorem nostrud consequat minim voluptate incididunt occaecat velit culpa mollit. Exercitation aliquip Lorem dolor eiusmod sit quis sunt ipsum amet est. Irure dolore adipisicing id consequat nulla. Eu ad voluptate minim cillum dolore fugiat eu sit pariatur ea ad veniam laborum in.", imageUrl: "assets/images/3.png"),
 ];
 
 
@@ -64,6 +64,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
       body: Stack(
         children: [
           PageView(
+            //scrollDirection: Axis.vertical,
             controller: pageViewController,
             physics: const BouncingScrollPhysics(), //para evitar que haga ese efecto de rebote
             children: slides.map((slideData) => _Slide( //se mapea cada slide
