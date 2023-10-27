@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class InfiniteScrollScreen extends StatelessWidget {
   
-  static const name = "infinte_scroll_screen";
+  //static const name = "infinte_scroll_screen";
+  
   const InfiniteScrollScreen({super.key});
 
   @override
