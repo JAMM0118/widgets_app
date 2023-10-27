@@ -31,4 +31,12 @@ class AppTheme{
     colorSchemeSeed: colorList[selectedColor], // se da el color del tema de la app
     appBarTheme: const AppBarTheme(centerTitle: true), //se centraliza el titulo del appbar
   );
+
+  AppTheme copyWith({ //esto sirve para crear un estado y no tener problemas con los final
+    int? selectedColor,
+    bool? isDarkMode
+}) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
+  );
 }
